@@ -255,6 +255,57 @@ export type Database = {
           },
         ]
       }
+      blog_articles: {
+        Row: {
+          body: Json
+          category: string
+          cover_url: string | null
+          created_at: string
+          created_by: string | null
+          excerpt: string
+          id: string
+          prompt: string | null
+          published_at: string | null
+          read_minutes: number
+          slug: string
+          status: string
+          title: string
+          updated_at: string
+        }
+        Insert: {
+          body?: Json
+          category?: string
+          cover_url?: string | null
+          created_at?: string
+          created_by?: string | null
+          excerpt?: string
+          id?: string
+          prompt?: string | null
+          published_at?: string | null
+          read_minutes?: number
+          slug: string
+          status?: string
+          title: string
+          updated_at?: string
+        }
+        Update: {
+          body?: Json
+          category?: string
+          cover_url?: string | null
+          created_at?: string
+          created_by?: string | null
+          excerpt?: string
+          id?: string
+          prompt?: string | null
+          published_at?: string | null
+          read_minutes?: number
+          slug?: string
+          status?: string
+          title?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
       chat_conversations: {
         Row: {
           created_at: string
