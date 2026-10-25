@@ -160,6 +160,7 @@ import InboxMessagePage from "./pages/InboxMessagePage";
 import AdminHealthMonitoring from "./pages/admin/AdminHealthMonitoring";
 import AdminWhiteLabel from "./pages/admin/AdminWhiteLabel";
 import AdminLiveSessions from "./pages/admin/AdminLiveSessions";
+import AdminArticles from "./pages/admin/AdminArticles";
 import { SessionTracker } from "@/hooks/useSessionTracker";
 import { PwaRouteGate } from "@/components/PwaRouteGate";
 import { Seo } from "@/components/Seo";
@@ -279,6 +280,7 @@ const App = () => (
               <Route path="inbox" element={<InboxMessagePage />} />
               <Route path="inbox/:id" element={<InboxMessagePage />} />
               <Route path="admin/push" element={<AdminRoute><AdminPushNotifications /></AdminRoute>} />
+              <Route path="admin/articles" element={<AdminRoute><AdminArticles /></AdminRoute>} />
               <Route path="admin/notification-logs" element={<AdminRoute><AdminNotificationLogs /></AdminRoute>} />
               <Route path="admin/feature-flags" element={<AdminRoute><AdminFeatureFlags /></AdminRoute>} />
               <Route path="admin/settings" element={<AdminRoute><AdminPlatformSettings /></AdminRoute>} />
